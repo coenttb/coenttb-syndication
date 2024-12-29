@@ -129,7 +129,7 @@ extension RSS.Feed {
                     <title>\(item.title)</title>
                     <link>\(item.link.absoluteString)</link>
                     <dc:creator><![CDATA[\(item.creator)]]></dc:creator>
-                    <pubDate>\(item.publicationDate.formatted(.rfc822))</pubDate>
+                    <pubDate>\(item.publicationDate.formatted(.rfc2822))</pubDate>
                     <description><![CDATA[\(item.description)]]></description>
                     \(item.image.map { """
                     <enclosure url="\($0.url.absoluteString)" type="image/\($0.variant)" />
@@ -147,7 +147,7 @@ extension RSS.Feed {
                     <link>\(feed.metadata.link.absoluteString)</link>
                     <description>\(feed.metadata.description)</description>
                     <language>\(feed.metadata.language)</language>
-                    <lastBuildDate>\(Date().formatted(.rfc822))</lastBuildDate>
+                    <lastBuildDate>\(Date().formatted(.rfc2822))</lastBuildDate>
                     \(feed.metadata.imageURL.map { imageURL in
                     """
                     <image>

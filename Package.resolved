@@ -52,7 +52,7 @@
       "location" : "https://github.com/coenttb/coenttb-web",
       "state" : {
         "branch" : "main",
-        "revision" : "d39376f8b0b8fc23c15ed7d06c2f172f21bdd8ac"
+        "revision" : "a4184cc35c1e4576ae011150bbc5144cac077aed"
       }
     },
     {
@@ -60,8 +60,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/pointfreeco/combine-schedulers",
       "state" : {
-        "revision" : "9fa31f4403da54855f1e2aeaeff478f4f0e40b13",
-        "version" : "1.0.2"
+        "revision" : "5928286acce13def418ec36d05a001a9641086f2",
+        "version" : "1.0.3"
       }
     },
     {
@@ -124,7 +124,7 @@
       "location" : "https://github.com/coenttb/pointfree-web",
       "state" : {
         "branch" : "main",
-        "revision" : "6fdb3612b3db916e87c04f27628448f56c9f4677"
+        "revision" : "5994fff00e459c2bc4277cfa57ed7a184b3c51ad"
       }
     },
     {
@@ -213,8 +213,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/pointfreeco/swift-clocks",
       "state" : {
-        "revision" : "b9b24b69e2adda099a1fa381cda1eeec272d5b53",
-        "version" : "1.0.5"
+        "revision" : "cc46202b53476d64e824e0b6612da09d84ffde8e",
+        "version" : "1.0.6"
       }
     },
     {
@@ -268,7 +268,7 @@
       "location" : "https://github.com/coenttb/swift-date",
       "state" : {
         "branch" : "main",
-        "revision" : "b13f34f8475e2cbece64a840bb03f65fa6ef681f"
+        "revision" : "8f433af24df277c79c2cc7d1e01b9719fbff3fe2"
       }
     },
     {
@@ -295,16 +295,16 @@
       "location" : "https://github.com/coenttb/swift-environment-variables.git",
       "state" : {
         "branch" : "main",
-        "revision" : "d9413bf1dac21f03536d21b4877aea32700b3307"
+        "revision" : "8755643cb24d770fa2291da61881ff35ca2f4421"
       }
     },
     {
       "identity" : "swift-html",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/coenttb/swift-html.git",
+      "location" : "https://github.com/coenttb/swift-html",
       "state" : {
         "branch" : "main",
-        "revision" : "fa85b77ab6eea64d2dac76bf5f3eb5aceae053ca"
+        "revision" : "bfbea2b2edf6b9c8106263784181c29734c3750c"
       }
     },
     {
@@ -331,7 +331,7 @@
       "location" : "https://github.com/coenttb/swift-language.git",
       "state" : {
         "branch" : "main",
-        "revision" : "83ed96d0b9deece2a862b21f035fa299884fc347"
+        "revision" : "d01ca3bafea825c8562fee17363d69642213bcf2"
       }
     },
     {
@@ -493,7 +493,7 @@
       "location" : "https://github.com/coenttb/swift-web",
       "state" : {
         "branch" : "main",
-        "revision" : "f559d72afb1a19e8891d8f16eed2e03a67e24e91"
+        "revision" : "7cde70656765ae3128b5258bca6de1717d8be504"
       }
     },
     {
@@ -501,8 +501,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/vapor/vapor.git",
       "state" : {
-        "revision" : "1f29415ed888a942bb23486ca9e422123a07e70f",
-        "version" : "4.110.0"
+        "revision" : "73dfe634f04945285054b261369cd93f5100b44c",
+        "version" : "4.110.2"
       }
     },
     {
