@@ -7,7 +7,7 @@
 
 import Foundation
 import Testing
-@testable import CoenttbSyndication
+@testable import Coenttb_Syndication
 
 @Test
 func test() async throws  {

@@ -5,19 +5,19 @@
 //  Created by Coen ten Thije Boonkkamp on 17/12/2024.
 //
 
-import URLRouting
+import Coenttb_Web
 
 public enum API: Equatable, Sendable {
     case image(String)
 }
-extension CoenttbSyndication.API {
+extension Coenttb_Syndication.API {
     public struct Router: ParserPrinter, Sendable {
         
         public init(){}
         
-        public var body: some URLRouting.Router<CoenttbSyndication.API> {
+        public var body: some URLRouting.Router<Coenttb_Syndication.API> {
             OneOf {
-                URLRouting.Route(.case(CoenttbSyndication.API.image)) {
+                URLRouting.Route(.case(Coenttb_Syndication.API.image)) {
                     Path {
                         "image"
                         Parse(.string)

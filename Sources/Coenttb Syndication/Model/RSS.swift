@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import CoenttbWeb
+import Coenttb_Web
 
 public struct RSS: Codable, Hashable, Sendable {
     

@@ -1,5 +1,5 @@
 {
-  "originHash" : "3686a2236c26466345974e0e637efe61c06ca182b5daca17cfdf83627831fedc",
+  "originHash" : "3757fe6ea675878a39a27d1f5af0b6095bfa40fa1b0a13f2209def313b039503",
   "pins" : [
     {
       "identity" : "async-http-client",
@@ -38,6 +38,15 @@
       }
     },
     {
+      "identity" : "coenttb-server",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/coenttb/coenttb-server",
+      "state" : {
+        "branch" : "main",
+        "revision" : "ea442e4070680b5f0064c01accf168cf5a482ee8"
+      }
+    },
+    {
       "identity" : "coenttb-utils",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/coenttb/coenttb-utils",
@@ -52,7 +61,7 @@
       "location" : "https://github.com/coenttb/coenttb-web",
       "state" : {
         "branch" : "main",
-        "revision" : "a4184cc35c1e4576ae011150bbc5144cac077aed"
+        "revision" : "4118318ead4ebe6b629e3d1f8550f93df43147e3"
       }
     },
     {
@@ -115,7 +124,7 @@
       "location" : "https://github.com/coenttb/pointfree-html.git",
       "state" : {
         "branch" : "main",
-        "revision" : "3d56e6c42029c62d6913f6b623ab3036d9f30092"
+        "revision" : "517a823ffb482d588fbd46c2606a87dc8f35f3ec"
       }
     },
     {
@@ -301,10 +310,10 @@
     {
       "identity" : "swift-html",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/coenttb/swift-html",
+      "location" : "https://github.com/coenttb/swift-html.git",
       "state" : {
         "branch" : "main",
-        "revision" : "bfbea2b2edf6b9c8106263784181c29734c3750c"
+        "revision" : "cb8d1b8fe55fd827df971a2982f09aa096394796"
       }
     },
     {
@@ -331,7 +340,7 @@
       "location" : "https://github.com/coenttb/swift-language.git",
       "state" : {
         "branch" : "main",
-        "revision" : "d01ca3bafea825c8562fee17363d69642213bcf2"
+        "revision" : "63b455da4844a701663dd91bb681bf05a536c92f"
       }
     },
     {
@@ -501,8 +510,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/vapor/vapor.git",
       "state" : {
-        "revision" : "73dfe634f04945285054b261369cd93f5100b44c",
-        "version" : "4.110.2"
+        "revision" : "4d7456c0d4b33ef82783a90ecfeae33a52a3972a",
+        "version" : "4.111.0"
       }
     },
     {

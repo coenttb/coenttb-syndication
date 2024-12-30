@@ -4,7 +4,7 @@ import Foundation
 import PackageDescription
 
 extension String {
-    static let coenttbSyndication: Self = "CoenttbSyndication"
+    static let coenttbSyndication: Self = "Coenttb Syndication"
 }
 
 extension Target.Dependency {
@@ -12,7 +12,8 @@ extension Target.Dependency {
 }
 
 extension Target.Dependency {
-    static var coenttbWeb: Self { .product(name: "CoenttbWeb", package: "coenttb-web") }
+    static var coenttbWeb: Self { .product(name: "Coenttb Web", package: "coenttb-web") }
+    static var coenttbVapor: Self { .product(name: "Coenttb Vapor", package: "coenttb-server") }
     static var dependenciesTestSupport: Self { .product(name: "DependenciesTestSupport", package: "swift-dependencies") }
 }
 
@@ -27,13 +28,15 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/coenttb/coenttb-web", branch: "main"),
+        .package(url: "https://github.com/coenttb/coenttb-server", branch: "main"),
         .package(url: "https://github.com/pointfreeco/swift-dependencies", branch: "1.6.2"),
     ],
     targets: [
         .target(
             name: .coenttbSyndication,
             dependencies: [
-                .coenttbWeb
+                .coenttbWeb,
+                .coenttbVapor,
             ]
         ),
         .testTarget(
