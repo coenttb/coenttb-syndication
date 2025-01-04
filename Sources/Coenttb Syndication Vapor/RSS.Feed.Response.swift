@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Coenttb_Syndication
 import Coenttb_Vapor
 
 extension RSS.Feed {
