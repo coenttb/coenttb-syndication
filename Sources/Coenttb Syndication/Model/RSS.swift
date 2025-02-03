@@ -7,6 +7,7 @@
 
 import Foundation
 import Coenttb_Web
+import RFC_2822
 
 public struct RSS: Codable, Hashable, Sendable {
     
@@ -43,7 +44,7 @@ extension RSS.Feed {
         let link: URL
         let image: RSS.Image?
         let creator: String
-        let publicationDate: Date
+        let publicationDate: Foundation.Date
         let description: String
         
         public init(
@@ -51,7 +52,7 @@ extension RSS.Feed {
             link: URL,
             image: RSS.Image?,
             creator: String,
-            publicationDate: Date,
+            publicationDate: Foundation.Date,
             description: String
         ) {
             self.title = title
@@ -147,7 +148,7 @@ extension RSS.Feed {
                     <link>\(feed.metadata.link.absoluteString)</link>
                     <description>\(feed.metadata.description)</description>
                     <language>\(feed.metadata.language)</language>
-                    <lastBuildDate>\(Date().formatted(.rfc2822))</lastBuildDate>
+                    <lastBuildDate>\(Foundation.Date().formatted(.rfc2822))</lastBuildDate>
                     \(feed.metadata.imageURL.map { imageURL in
                     """
                     <image>
