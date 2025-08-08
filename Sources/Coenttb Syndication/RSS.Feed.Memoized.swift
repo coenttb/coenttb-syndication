@@ -12,14 +12,14 @@ extension RSS.Feed {
         private struct CachedFeed {
             let feed: RSS.Feed
             let generatedAt: Date
-            
+
             var isValid: Bool {
                 Date().timeIntervalSince(generatedAt) < Self.cacheValidityDuration
             }
-            
+
             static let cacheValidityDuration: TimeInterval = 3600
         }
-        
+
         private var cachedFeed: CachedFeed?
     }
 }
@@ -35,7 +35,7 @@ extension RSS.Feed.Memoized {
         if let cached = cachedFeed, cached.isValid {
             return cached.feed
         }
-        
+
         let feed = generate()
         cachedFeed = CachedFeed(feed: feed, generatedAt: Date())
         return feed

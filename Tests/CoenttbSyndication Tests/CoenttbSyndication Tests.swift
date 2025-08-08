@@ -5,11 +5,11 @@
 //  Created by Coen ten Thije Boonkkamp on 13/12/2024.
 //
 
+@testable import Coenttb_Syndication
 import Foundation
 import Testing
-@testable import Coenttb_Syndication
 
 @Test
-func test() async throws  {
-    
+func test() async throws {
+
 }

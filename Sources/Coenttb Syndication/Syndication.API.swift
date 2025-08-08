@@ -12,9 +12,9 @@ public enum API: Equatable, Sendable {
 }
 extension Coenttb_Syndication.API {
     public struct Router: ParserPrinter, Sendable {
-        
-        public init(){}
-        
+
+        public init() {}
+
         public var body: some URLRouting.Router<Coenttb_Syndication.API> {
             OneOf {
                 URLRouting.Route(.case(Coenttb_Syndication.API.image)) {

@@ -32,13 +32,13 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/coenttb/coenttb-web", branch: "main"),
         .package(url: "https://github.com/coenttb/coenttb-server-vapor", branch: "main"),
-        .package(url: "https://github.com/pointfreeco/swift-dependencies", from: "1.6.2"),
+        .package(url: "https://github.com/pointfreeco/swift-dependencies", from: "1.6.2")
     ],
     targets: [
         .target(
             name: .coenttbSyndication,
             dependencies: [
-                .coenttbWeb,
+                .coenttbWeb
             ]
         ),
         .target(
@@ -46,7 +46,7 @@ let package = Package(
             dependencies: [
                 .coenttbWeb,
                 .coenttbSyndication,
-                .coenttbVapor,
+                .coenttbVapor
             ]
         ),
         .testTarget(

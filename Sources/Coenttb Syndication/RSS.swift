@@ -5,12 +5,12 @@
 //  Created by Coen ten Thije Boonkkamp on 17/12/2024.
 //
 
-import Foundation
 import Coenttb_Web
+import Foundation
 import RFC_2822
 
 public struct RSS: Codable, Hashable, Sendable {
-    
+
 }
 
 extension RSS {
@@ -25,7 +25,7 @@ extension RSS {
         let metadata: Metadata
         let items: [Item]
         let version: RSS.Version
-        
+
         public init(
             metadata: Metadata,
             items: [Item],
@@ -46,7 +46,7 @@ extension RSS.Feed {
         let creator: String
         let publicationDate: Foundation.Date
         let description: String
-        
+
         public init(
             title: String,
             link: URL,
@@ -69,12 +69,12 @@ extension RSS {
     public struct Image: Codable, Hashable, Sendable {
         let url: URL
         let variant: Image.Variant
-        
+
         public init(url: URL, variant: Image.Variant) {
             self.url = url
             self.variant = variant
         }
-        
+
         public enum Variant: String, Codable, Hashable, Sendable {
             case jpeg
             case png
@@ -89,7 +89,7 @@ extension RSS.Feed {
         let description: String
         let language: String
         let imageURL: URL?
-        
+
         public init(
             title: String,
             link: URL,
@@ -109,10 +109,10 @@ extension RSS.Feed {
 extension RSS.Feed {
     public struct XML: CustomStringConvertible, Sendable {
         private let feed: RSS.Feed
-        
+
         public init(feed: RSS.Feed) {
             self.feed = feed
-            
+
             func generateItems(
                 sortBy: @escaping (RSS.Feed.Item, RSS.Feed.Item) -> Bool = { $0.publicationDate > $1.publicationDate },
                 limit: Int = 20
@@ -123,7 +123,7 @@ extension RSS.Feed {
                     .map(generateItem)
                     .joined(separator: "\n")
             }
-            
+
             func generateItem(_ item: RSS.Feed.Item) -> String {
                 """
                 <item>
@@ -138,7 +138,7 @@ extension RSS.Feed {
                 </item>
                 """
             }
-            
+
             self.description =
             """
             <?xml version="1.0" encoding="UTF-8"?>
@@ -162,12 +162,10 @@ extension RSS.Feed {
                 </channel>
             </rss>
             """
-            
+
         }
-        
+
         public let description: String
-        
-        
+
     }
 }
-
